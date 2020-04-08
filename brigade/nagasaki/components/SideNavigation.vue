@@ -13,7 +13,7 @@
           <img
             class="SideNavigation-HeaderLogo"
             src="/logo.svg"
-            :alt="$t('東京都')"
+            :alt="$t('長崎県')"
           />
           <div class="SideNavigation-HeaderText">
             {{ $t('menu/新型コロナウイルス感染症') }}<br />{{
@@ -163,6 +163,12 @@ export default Vue.extend({
           icon: 'mdi-chart-timeline-variant',
           title: this.$t('県内の最新感染動向'),
           link: this.localePath('/')
+        },
+        {
+          icon: 'mdi-chart-timeline-variant',
+          title: this.$t('長崎市地域センター窓口混雑情報'),
+          link:
+            'https://www.city.nagasaki.lg.jp/shimin/121000/121100/p034298.html'
         },
         {
           icon: 'CovidIcon',
